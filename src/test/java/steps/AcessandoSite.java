@@ -18,7 +18,7 @@ public class AcessandoSite {
 
     @Dado("que o usuário está na tela de login do site {string}")
     public void queOUsuárioEstáNaTelaDeLoginDoSite(String site) {
-        System.setProperty("webdriver.chrome.driver", "target/WebDriverChrome/chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "WebDriverChrome/chromedriver.exe");
         driver = new ChromeDriver();
         driver.get(site);
         driver.manage().window().maximize();
